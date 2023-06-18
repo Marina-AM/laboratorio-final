@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UFT-8">
+        <title>Laboratorio 3</title>
+        <link href="fu.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <section class="group">
+        <form method="POST" action="formulario.php">
+            <h2><em>Formulario de registro</em></h2>
+
+            <!--Nombre-->
+                <div class="formulario">
+                    <h3>Nombre <em>(requerido)</em></h3>
+                    <div class="estiloForm">
+                        <input type="text" class="inputForm" name="nombre" id="nombre" value="" autocomplete="off" pattern="[a-zA-Z]+" maxlength="10" required>
+                        <br/>
+                        <span id="nombreError"></span>
+                    </div>
+                </div>
+
+                <br/>
+
+            <!--Apellido1-->
+                <div class="formulario">
+                    <h3>Primer apellido <em>(requerido)</em></h3>
+                    <div class="estiloForm">
+                        <input type="text" class="inputForm" name="apellido1" id="apellido1" value="" autocomplete="off" pattern="[a-zA-Z]+" maxlength="10" required>
+                        <br/>
+                        <span id="apellido1Error"></span>
+                    </div>
+                </div>
+
+                <br/>
+
+            <!--Apellido2-->
+                <div class="formulario">
+                    <h3>Segundo apellido <em>(requerido)</em></h3>
+                    <div class="estiloForm">
+                        <input type="text" class="inputForm" name="apellido2" id="apellido2" value="" autocomplete="off" pattern="[a-zA-Z]+" maxlength="10" required>
+                        <br/>
+                        <span id="apellido2Error"></span>
+                    </div>
+                </div>
+
+                <br/>
+
+            <!--Email-->
+                <div class="formulario">
+                    <h3>Email <em>(requerido)</em></h3>
+                    <div class="estiloForm">
+                        <input type="email" class="inputForm" name="email" id="email" value="" autocomplete="off" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" maxlength="64" required>
+                        <br/>
+                        <span id="emailError"></span>
+                    </div>
+                </div>
+
+                <br/>
+
+            <!--Login-->
+                <div class="formulario">
+                    <h3>Login <em>(requerido)</em></h3>
+                    <div class="estiloForm">
+                        <input type="text" class="inputForm" name="login" id="login" value="" autocomplete="off" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+                        <span id="loginError"></span>
+                    </div>
+                </div>
+
+                <br/>
+
+            <!--Clave-->
+                <div class="formulario">
+                    <h3>Clave <em>(requerido)</em></h3>
+                    <div class="estiloForm">
+                        <input type="password" class="inputForm" name="clave" id="clave" value="" autocomplete="off" minlength="4" maxlength="8" pattern="[A-Za-z0-9!?-]{8,12}" required>
+                        <span id="claveError"></span>
+                    </div>
+                </div>
+
+                <br/>
+    
+            <!--Boton-->
+                <div class="formulario formularioBoton" name="grupoBoton">
+                    <input type="submit" value="Suscribirse" class="boton" name="boton" id="boton">
+                </div>
+                
+
+        </form>
+
+    </section>
+    </body>
+</html>
